@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
+  <listeners>
+    <listener class-name="utils.ListenerClass"/>
+  </listeners>
+  <test thread-count="5" name="Test(failed)">
+    <classes>
+      <class name="test.TS_003_CancelBookingPageTest">
+        <methods>
+          <include name="openBrowser"/>
+          <include name="cancelBooking"/>
+          <include name="reportClose"/>
+          <include name="report"/>
+          <include name="setup"/>
+          <include name="testDetails"/>
+        </methods>
+      </class> <!-- test.TS_003_CancelBookingPageTest -->
+      <class name="test.TS_001_LoginWithParametersTest">
+        <methods>
+          <include name="openBrowser"/>
+          <include name="setup"/>
+          <include name="reportClose"/>
+          <include name="report"/>
+          <include name="testDetails"/>
+          <include name="LoginwithParameter" invocation-numbers="1 2 3"/>
+        </methods>
+      </class> <!-- test.TS_001_LoginWithParametersTest -->
+    </classes>
+  </test> <!-- Test(failed) -->
+</suite> <!-- Failed suite [Suite] -->
